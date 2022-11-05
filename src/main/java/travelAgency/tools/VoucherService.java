@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 /**
  * Class for filtering or sorting the elements of the voucher collection depending on the request
  */
-public class FilterOrSort {
+public class VoucherService {
 
     /**
      * Filtering by passed attribute

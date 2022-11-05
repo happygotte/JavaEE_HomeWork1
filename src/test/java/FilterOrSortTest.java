@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import travelAgency.Voucher;
 import travelAgency.api.Food;
 import travelAgency.api.Transport;
-import travelAgency.tools.FilterOrSort;
+import travelAgency.tools.VoucherService;
 import travelAgency.tools.comparators.CompByCountOfDays;
 import travelAgency.tools.comparators.CompByName;
 import travelAgency.tools.comparators.CompByPrice;
@@ -24,7 +23,7 @@ import java.util.List;
 public class FilterOrSortTest {
 
     List<Voucher> vouchers = new ArrayList<>();
-    FilterOrSort filtration = new FilterOrSort();
+    VoucherService filtration = new VoucherService();
 
     Voucher cruise = new Voucher(new Cruise("По волнам Свислочи", Food.BED_AND_BREAKFAST,
             125), 5);
